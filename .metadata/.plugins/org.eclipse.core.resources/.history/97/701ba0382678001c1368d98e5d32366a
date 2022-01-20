@@ -1,0 +1,17 @@
+package com.bajaj.helloworld;
+
+class vehicle{
+	int wheels;
+	String type;
+	public vehicle(int wheels,String type) {
+		this.wheels=wheels;
+		this.type=type;
+		System.out.println(this.wheels+this.type);
+	}
+}
+public class Practice{
+	public static void main(String args[]) {
+		vehicle car=new vehicle(4,"car");
+		vehicle cycle=new vehicle(2,"cycle");
+	}
+}

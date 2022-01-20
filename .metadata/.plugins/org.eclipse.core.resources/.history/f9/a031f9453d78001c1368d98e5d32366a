@@ -1,0 +1,34 @@
+package com.bajaj.helloworld;
+
+class vehicle{
+	int wheels;
+	String type;
+	
+	public int getWheels() {
+		return wheels;
+	}
+
+	public void setWheels(int wheels) {
+		this.wheels = wheels;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public vehicle(int wheels,String type) {
+		setWheels(wheels);
+		setType(type);
+		System.out.println(getWheels());
+	}
+}
+public class Practice{
+	public static void main(String args[]) {
+		vehicle car=new vehicle(4,"car");
+		vehicle cycle=new vehicle(2,"cycle");
+	}
+}

@@ -1,0 +1,26 @@
+package com.bajaj.helloworld;
+
+class vehicle{
+	public void printing() {
+		System.out.println("It is vehicle");
+	}
+	public vehicle() {
+		System.out.println("hey vehicle");
+	}
+}
+class car extends vehicle{
+	public void printing() {
+		System.out.println("It is car");
+	}
+	public car() {
+		super();
+		System.out.println("hey car");
+	}
+}
+public class Practice{
+	public static void main(String args[]) {
+		vehicle v=new vehicle();
+		car c=new car();
+		c.printing();
+	}
+}

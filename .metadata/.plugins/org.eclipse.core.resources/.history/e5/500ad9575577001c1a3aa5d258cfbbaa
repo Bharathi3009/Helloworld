@@ -1,0 +1,9 @@
+package com.bajaj.helloworld;
+
+public class helloworld {
+	public static void main(String args[]) {
+		System.out.println(args[0]);
+		System.out.println("hello");
+		System.out.println("hello");	}
+
+}

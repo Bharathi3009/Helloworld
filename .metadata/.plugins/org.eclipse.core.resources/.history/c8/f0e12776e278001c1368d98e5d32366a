@@ -1,0 +1,21 @@
+package com.bajaj.helloworld;
+
+abstract class vehicle{
+	abstract void tyres();
+	public void name() {
+		System.out.println("hey vehicle");
+	}
+}
+class car extends vehicle{
+	@Override
+	public void tyres() {
+		System.out.println("there are 4");
+	}
+}
+public class Practice{
+	public static void main(String args[]) {
+		car c=new car();
+		c.tyres();
+		c.name();
+	}
+}

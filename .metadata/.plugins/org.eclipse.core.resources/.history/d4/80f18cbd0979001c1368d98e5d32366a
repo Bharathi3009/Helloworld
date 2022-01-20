@@ -1,0 +1,58 @@
+package com.bajaj.helloworld;
+
+import java.util.Scanner;
+
+class Employee{
+	int empid;
+	String empname;
+	public Employee(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+}
+
+public class BankApplication {
+	public static void main(String args[]) {
+		Scanner sc=new Scanner(System.in);
+		while(true) {
+		System.out.println("enter the input");
+		System.out.println("1-create");
+		System.out.println("2-insert/append");
+		System.out.println("3-delete");
+		System.out.println("4-update");
+		System.out.println("5-search by name");
+		System.out.println("6-sort ASC");
+		System.out.println("7-sort DESC");
+		System.out.println("8-close");
+		int input=sc.nextInt();
+		if(input==8) {
+			System.out.println("Exiting....");
+			break;
+		}
+		if(input==1) {
+			System.out.println("enter size:");
+			int size=sc.nextInt();
+			Employee emp[]=new Employee[size];
+			for(int i=0;i<size;i++) {
+				System.out.println("enter details:");
+				int id=sc.nextInt();
+				String name=sc.next();
+				Employee empi=new Employee(id,name);
+				emp[i]=empi;
+			}
+			for(int i=0;i<size;i++) {
+				System.out.println(emp[i].toString());
+			}
+			break;
+		}
+		if(input==2) {
+			
+		}
+	}
+	}
+}

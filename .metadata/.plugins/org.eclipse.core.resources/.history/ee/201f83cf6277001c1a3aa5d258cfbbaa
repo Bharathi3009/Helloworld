@@ -1,0 +1,15 @@
+package com.bajaj.helloworld;
+import java.util.Scanner;
+
+public class helloworld {
+	public static void main(String args[]) {
+		int a=10;
+		Scanner sc=new Scanner(System.in);
+		int b=sc.nextInt();
+		String s = "bannu";
+		char ch='A';
+		System.out.println(b);
+		System.out.println(s);
+		System.out.println(ch);	}
+
+}

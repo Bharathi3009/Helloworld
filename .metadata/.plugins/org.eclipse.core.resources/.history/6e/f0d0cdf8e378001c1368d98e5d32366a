@@ -1,0 +1,25 @@
+package com.bajaj.helloworld;
+
+interface vehicle{
+	void tyres();
+}
+class car implements vehicle{
+	@Override
+	public void tyres() {
+		System.out.println("there are 4");
+	}
+	public void name() {
+		System.out.println("hey car");
+	}
+}
+public class Practice{
+	public static void main(String args[]) {
+		vehicle c=new vehicle() {
+			@Override
+			public void tyres() {
+				System.out.println("there are 4");
+			}
+};
+		c.tyres();
+	}
+}

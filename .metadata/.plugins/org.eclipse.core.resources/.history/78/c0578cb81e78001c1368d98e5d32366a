@@ -1,0 +1,37 @@
+package com.bajaj.helloworld;
+
+class objecting {
+	private int age;
+	int Salary;
+	String name;
+	public void setAge(int age) {
+		this.age=age;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setSalary(int Salary) {
+		this.age=Salary;
+	}
+	public int getSalary() {
+		return Salary;
+	}
+	public void setName(String name) {
+		this.name=name;
+	}
+	public String getName() {
+		return name;
+	}
+	public objecting(int age,int salary,String name) {
+		setAge(age);
+		System.out.println("reached");
+		}
+}
+
+public class Person{
+	public static void main(String args[]) {
+		objecting bhars=new objecting(10,2000,"me");
+		System.out.println(bhars.getAge());
+		
+	}
+}
