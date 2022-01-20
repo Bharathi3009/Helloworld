@@ -1,0 +1,26 @@
+package com.bajaj.helloworld;
+import java.util.*;
+import java.util.ArrayList;
+
+class Employees{
+	int empid;
+	String empname;
+	public Employees(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+}
+public class Mycollections {
+	List<Employees> ls=new ArrayList<Employees>();
+	
+	//add
+	
+	
+	ls.add(new Employees(100,"Ansar"));
+	ls.add(new Employees(200,"Mahesh"));
+}

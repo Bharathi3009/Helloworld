@@ -1,5 +1,16 @@
 package com.bajaj.helloworld;
+import java.util.*;
 //abstract classes
+
+class adding<A,B>{
+	A a;
+	B b;
+	public adding(A a,B b) {
+		this.a=a;
+		this.b=b;
+	}
+}
+
 interface vehicle{
 	void tyres();
 }
@@ -20,6 +31,9 @@ class car extends autovehicle implements vehicle{
 }
 public class practice{
 	public static void main(String args[]) {
+		adding<Integer,String> ad=new adding<Integer,String>(1,"bannu");
+		System.out.println(ad.a+ad.b);
+		
 		vehicle v=new vehicle() {
 			@Override
 			public void tyres() {
@@ -40,5 +54,7 @@ public class practice{
 		c.tyres();
 		c.autopilot();
 		c.name();
+		
+		
 	}
 }

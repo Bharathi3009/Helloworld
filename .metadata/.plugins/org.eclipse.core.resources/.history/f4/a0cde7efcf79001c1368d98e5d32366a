@@ -1,0 +1,30 @@
+package com.bajaj.helloworld;
+import java.util.*;
+import java.util.ArrayList;
+
+class Employees 
+{
+	@Override
+	public String toString() {
+		System.out.println("Employees [rollno=" + rollno + ", name=" + name + "]");
+		return null;
+	}
+	public Employees(int rollno, String name) {
+		super();
+		this.rollno = rollno;
+		this.name = name;
+	}
+	
+	
+	int rollno;
+	String name;
+}
+
+
+public class Mycollections {
+	List<Employees> ls=new ArrayList<Employees>();{
+		ls.add(new Employees(10,"Ansar"));
+	}
+	Employees e1=new Employees(2,"chinnu");
+	System.
+	}

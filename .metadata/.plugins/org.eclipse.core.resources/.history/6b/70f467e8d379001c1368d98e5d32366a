@@ -1,0 +1,31 @@
+package com.bajaj.helloworld;
+
+import java.util.*;
+
+class Employees{
+	int empid;
+	String empname;
+	public Employees(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+}
+
+public class Mycollections {
+	public static void main(String args[]) {
+		List<Employees> ls=new ArrayList<Employees>();
+		Employees e1=new Employees(1,"bannu");
+		ls.add(e1);
+		ls.add(new Employees(2,"chinnu"));
+		System.out.println(ls);
+		for(Employees item:ls) {
+			System.out.println(item);
+		}
+		
+	}
+}
