@@ -1,0 +1,38 @@
+package com.bajaj.helloworld;
+
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.List;
+class Student {
+	int id;
+	String name;
+	int marks;
+	@Override
+	public String toString() {
+		return "Student [id=" + id + ", name=" + name + ", marks=" + marks + "]";
+	}
+	public Student(int id, String name, int marks) {
+		super();
+		this.id = id;
+		this.name = name;
+		this.marks = marks;
+	}
+}
+
+public class MyComparator {
+	public static void main(String args[]) {
+		List<Student> s=new ArrayList<Student>();
+		s.add(new Student(15,"bannu",76));
+		s.add(new Student(10,"chinnu",91));
+		s.add(new Student(11,"cherry",56));
+		s.add(new Student(7,"viswa",93));
+		for(Student p:s) {
+			System.out.println(p);
+		}
+		Collections.sort(s,new sortById());
+		for(Student p:s) {
+			System.out.println(p);
+		}
+	}
+}

@@ -1,0 +1,27 @@
+package com.bajaj.helloworld;
+
+public class MyException {
+	public static void abc() throws Exception{
+		int p=10/0;
+	}
+	public static void main(String args[]) {
+		int a=10;
+		try {
+			abc();
+		}
+		catch(Exception e) {
+			System.out.println(e.getMessage());
+		}
+		try {
+			int ans=a/0;
+		}
+		catch(ArithmeticException e) {
+			System.out.println("arithmetic block");
+		}
+		catch(Exception e) {
+			System.out.println("catch block");
+			e.printStackTrace();
+			System.out.println(e.getMessage());
+		}
+	}
+}

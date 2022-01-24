@@ -1,0 +1,34 @@
+package com.bajaj.helloworld;
+
+interface FunType{
+	public void run1();
+}
+interface Int{
+	public int run2(String s);
+}
+interface StrtoInt{
+	public void run3(String s);
+}
+interface EvenOdd{
+	public void run4(Integer i);
+}
+
+public class Lambda {
+	public static void main(String args[]) {
+		FunType a=()->System.out.println("just void");
+		a.run1();
+		
+		//length of string
+		Int b=(s)->s.length();
+		System.out.println(b.run2("bannu"));
+		
+		StrtoInt c=(s)->System.out.println(s.length());
+		c.run3("bannu");
+		
+	    //even odd , input-integer, output-string so void
+		EvenOdd n1=i->{if(i%2==0) System.out.println("even");
+		               else System.out.println("odd");
+		              };
+		n1.run4(20);
+	}
+}

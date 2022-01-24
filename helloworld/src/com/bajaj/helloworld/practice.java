@@ -1,5 +1,5 @@
 package com.bajaj.helloworld;
-import java.util.*;
+
 //abstract classes
 
 class adding<A,B>{
@@ -29,6 +29,9 @@ class car extends autovehicle implements vehicle{
 		System.out.println("hey car");
 	}
 }
+interface FunctionType{
+	public void run();
+}
 public class practice{
 	public static void main(String args[]) {
 		adding<Integer,String> ad=new adding<Integer,String>(1,"bannu");
@@ -47,14 +50,17 @@ public class practice{
 		};
 		car c=new car();
 		vehicle av=new car();
-		
+		autovehicle av2=new car();
+		av2.autopilot();;
 		av.tyres();
 		v.tyres();
 		a.autopilot();
 		c.tyres();
 		c.autopilot();
 		c.name();
-		
+		FunctionType code=()->System.out.println("lamda");
+		code.run();
 		
 	}
 }
+

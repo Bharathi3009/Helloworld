@@ -1,0 +1,18 @@
+package com.bajaj.helloworld;
+
+interface FunctionType{
+	public void run1();
+}
+interface Int{
+	public int run2();
+}
+
+public class Lambda {
+	public static void main(String args[]) {
+		FunctionType a=()->System.out.println("just void");
+		a.run1();
+		//length of string
+		FunctionType b=str->str.length();
+		System.out.println(b.run2("bannu"));
+	}
+}

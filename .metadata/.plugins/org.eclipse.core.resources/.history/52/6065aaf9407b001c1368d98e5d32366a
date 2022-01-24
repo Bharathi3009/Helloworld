@@ -1,0 +1,41 @@
+package com.bajaj.helloworld;
+
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+
+class studentdetails{
+	String name;
+	String address;
+	long mobile;
+	@Override
+	public String toString() {
+		return "studentdetails [name=" + name + ", address=" + address + ", mobile=" + mobile + "]";
+	}
+	public studentdetails(String name, String address, long mobile) {
+		super();
+		this.name = name;
+		this.address = address;
+		this.mobile = mobile;
+	}
+}
+
+public class Mystream {
+	public static void main(String args[]) {
+		List<studentdetails> s=new ArrayList<studentdetails>();
+		s.add(new studentdetails("ansar","mumbai",5342));
+		s.add(new studentdetails("bannu","chennai",8371));
+		s.add(new studentdetails("viswa","mumbai",7362));
+		s.add(new studentdetails("cherry","pune",8473));
+		s.add(new studentdetails("harshit","mumbai",7538));
+		Stream<studentdetails> str=s.stream();
+		//printing all student details
+		str.forEach(i->System.out.println(i));
+		//printing all names
+		s.stream().forEach(i->System.out.println(i.name));
+		//details of student with name Ansar
+		s.stream().filter(i->i.name.equals("Ansar"))
+		.forEach(j->System.out.println(j));
+	}
+	
+}

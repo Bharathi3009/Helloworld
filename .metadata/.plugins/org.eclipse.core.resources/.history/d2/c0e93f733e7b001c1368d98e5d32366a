@@ -1,0 +1,18 @@
+package com.bajaj.helloworld;
+
+public class Studentdetails {
+	int age;
+	String name;
+	char section;
+	@Override
+	public String toString() {
+		return "Studentdetails [age=" + age + ", name=" + name + ", section=" + section + "]";
+	}
+	public Studentdetails(int age, String name, char section) {
+		super();
+		this.age = age;
+		this.name = name;
+		this.section = section;
+	}
+	
+}

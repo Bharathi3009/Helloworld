@@ -1,0 +1,57 @@
+package com.bajaj.helloworld;
+
+import java.util.*;
+
+class Employees{
+	int empid;
+	String empname;
+	public Employees(int empid, String empname) {
+		super();
+		this.empid = empid;
+		this.empname = empname;
+	}
+	@Override
+	public String toString() {
+		return "Employee [empid=" + empid + ", empname=" + empname + "]";
+	}
+}
+
+public class Mycollections {
+	public static void main(String args[]) {
+		
+		List<Employees> ls=new ArrayList<Employees>();
+		Employees e1=new Employees(1,"bannu");
+		ls.add(e1);
+		ls.add(new Employees(2,"chinnu"));
+		System.out.println(ls);
+		for(Employees item:ls) {
+			System.out.println(item);
+		}
+		
+		List l=new LinkedList();
+		l.add("hi");
+		l.add(1);
+		l.add('a');
+		System.out.println(l);
+		l.remove(1);
+		System.out.println(l);
+		l.contains(1);
+		System.out.println(l.get(1));
+		System.out.println(l.isEmpty());
+		l.contains('a');
+		l.add(2);
+		System.out.println(l.size());
+		//l.clear();
+		System.out.println(l.isEmpty());
+		System.out.println(l);
+		
+		Set<Integer> s1=new HashSet<Integer>();
+		s1.add(1);
+		s1.add(7);
+		s1.add(83);
+		s1.add(1);
+		System.out.println(s1);
+		
+		System.out.println(s1.contains(1));
+	}
+}
